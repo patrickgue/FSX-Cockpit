@@ -23,7 +23,7 @@ The netsh command can be simplyfied:
 
 ## Differences from the original PS-Scripts
 
-- Changed update rate to sim-framerate at [fsxSimConnect.ps1:125,128](fsxSimConnect.ps1)
+- Changed update rate to sim-framerate at [fsxSimconnect.ps1:125,128](fsxSimconnect.ps1)
 - Enabled CORS at [fsxWebServer.ps1:49](fsxWebServer.ps1) (Depending on your networking environment, this might pose a security risk)
 - Added several new variables to [fsx.xml](fsx.xml)
 
