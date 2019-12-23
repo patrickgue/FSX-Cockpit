@@ -1,7 +1,7 @@
 # FSX-Cockpit
 
 ![In Action](doc/20191223_095210.gif)
-˜[Screenshot](doc/screenshot.png)
+![Screenshot](doc/screenshot.png)
 
 ## Template for your home cockpit
 
