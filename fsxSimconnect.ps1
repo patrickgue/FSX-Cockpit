@@ -122,10 +122,10 @@ Register-ObjectEvent -InputObject $global:fsx -EventName OnRecvException -Action
 Register-ObjectEvent -InputObject $global:fsx -EventName OnRecvQuit -Action { $global:fsxConnected = $false } | out-null
 Register-ObjectEvent -InputObject $global:fsx -EventName OnRecvSimobjectData -Action { try { $global:sim = $args.dwData[0] } catch {} } | out-null
 
-$global:fsx.RequestDataOnSimObject([DataRequests]::Request1, [Definitions]::Struct1, [Microsoft.FlightSimulator.SimConnect.SimConnect]::SIMCONNECT_OBJECT_ID_USER, [Microsoft.FlightSimulator.SimConnect.SIMCONNECT_PERIOD]::SECOND, 0, 0, 0, 0);
+$global:fsx.RequestDataOnSimObject([DataRequests]::Request1, [Definitions]::Struct1, [Microsoft.FlightSimulator.SimConnect.SimConnect]::SIMCONNECT_OBJECT_ID_USER, [Microsoft.FlightSimulator.SimConnect.SIMCONNECT_PERIOD]::VISUAL_FRAME, 0, 0, 0, 0);
 
 $timer = New-Object System.Timers.Timer
-$timer.Interval = 1000
+$timer.Interval = 100
 $timer.AutoReset = $true
 Register-ObjectEvent -InputObject $timer -EventName Elapsed -Action { $global:fsx.ReceiveMessage() } | out-null
 $timer.Start()

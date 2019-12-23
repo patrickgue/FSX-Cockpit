@@ -7,10 +7,16 @@
     <var name="Plane Latitude" type="double" unit="degrees latitude"/>
     <var name="Plane Longitude" type="double" unit="degrees longitude"/>
     <var name="Plane Altitude" type="double" unit="feet"/>
+	<var name="Plane Pitch Degrees" type="double" unit="radians"/>
+	<var name="Plane Bank Degrees" type="double" unit="radians"/>
     <var name="Airspeed Indicated" type="double" unit="knots"/>
+	<var name="Vertical Speed" type="double" unit="feet/minute"/>
+	<var name="Indicated Altitude" type="double" unit="feet"/>
+	<var name="Angle of Attack Indicator" type="double" unit="radiants" />
+	<var name="Heading Indicator" type="double" unit="degrees" />
 	<var name="Plane Heading Degrees Magnetic" type="double" unit="degrees"/>
 	<var name="Plane Heading Degrees True" type="double" unit="degrees"/>
-
+	<var name="Turn Coordinator Ball" type="double" unit="percent"/>
     <!-- Radios -->
     <var name="Com Active Frequency:1" type="double" unit="MHz"/>
     <var name="Com Active Frequency:2" type="double" unit="MHz"/>

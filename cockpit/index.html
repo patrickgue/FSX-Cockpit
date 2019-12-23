@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cockpit</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="fonts/font.css"/>
+    </head>
+    <body>
+        <label><span>update</span>
+        <input type="checkbox"  id="update" /></label>
+        <div class="container">
+            <canvas id="ias"></canvas>
+            <canvas id="attitude"></canvas>
+            <canvas id="altitude"></canvas>
+            <div class="radio-wrapper">
+                <div class="radio-block">
+                    <div></div>
+                    <div class="radio-freq-head">COM 1</div>
+                    <div></div>
+                    <div class="radio-freq-head">COM 2</div>
+                    <div class="radio-dial">
+                        <div id="com1-dial" class="radio-knob">
+                            <span class="radio-rot-arrow">⤺</span>
+                            <span class="radio-rot-arrow">⤻</span>
+                        </div>
+                    </div>
+                    <div class="radio-freq" id="com1a">124.45</div>
+                    <div class="radio-switch-btn-wrap">
+                        <button class="radio-switch-btn">↔</button>
+                    </div>
+                    <div class="radio-freq" id="com1s">118.93</div>
+
+                    <div class="radio-dial">
+                        <div id="com2-dial" class="radio-knob">
+                            <span class="radio-rot-arrow">⤺</span>
+                            <span class="radio-rot-arrow">⤻</span>
+                        </div>
+                    </div>
+                    <div class="radio-freq" id="com2a">124.45</div>
+                    <div class="radio-switch-btn-wrap">
+                        <button class="radio-switch-btn">↔</button>
+                    </div>
+                    <div class="radio-freq" id="com2s">118.93</div>
+
+                    <div></div>
+                    <span>active</span>
+                    <div></div>
+                    <span>standby</span>
+                    <div></div>
+                    <span>active</span>
+                    <div></div>
+                    <span>standby</span>
+                </div>
+                <div class="radio-block">
+                    <div></div>
+                    <div class="radio-freq-head">NAV 1</div>
+                    <div></div>
+                    <div class="radio-freq-head">NAV 2</div>
+                    <div class="radio-dial">
+                        <div id="nav1-dial" class="radio-knob">
+                            <span class="radio-rot-arrow">⤺</span>
+                            <span class="radio-rot-arrow">⤻</span>
+                        </div>
+                    </div>
+                    <div class="radio-freq" id="nav1a">124.45</div>
+                    <div class="radio-switch-btn-wrap">
+                        <button class="radio-switch-btn">↔</button>
+                    </div>
+                    <div class="radio-freq" id="nav1s">118.93</div>
+
+                    <div class="radio-dial">
+                        <div id="nav2-dial" class="radio-knob">
+                            <span class="radio-rot-arrow">⤺</span>
+                            <span class="radio-rot-arrow">⤻</span>
+                        </div>
+                    </div>
+                    <div class="radio-freq" id="nav2a">124.45</div>
+                    <div class="radio-switch-btn-wrap">
+                        <button class="radio-switch-btn">↔</button>
+                    </div>
+                    <div class="radio-freq" id="nav2s">118.93</div>
+
+                    <div></div>
+                    <span>active</span>
+                    <div></div>
+                    <span>standby</span>
+                    <div></div>
+                    <span>active</span>
+                    <div></div>
+                    <span>standby</span>
+                </div>
+            </div>
+            <canvas id="turnslip"></canvas>
+            <canvas id="hdg"></canvas>
+            <canvas id="vspeed"></canvas>
+        </div>
+        <script src="jquery.min.js"></script>
+        <script src="cockpit.js"></script>
+    </body>
+</html>

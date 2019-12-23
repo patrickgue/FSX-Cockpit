@@ -46,6 +46,7 @@ while ($global:fsxConnected) {
 
     elseif ($request.RawUrl -match '/getall') {
         $response.ContentType = 'application/json'
+		$response.AddHeader("Access-Control-Allow-Origin", "*")
         SendData -response $response -text ($global:sim | ConvertTo-Json)
         $response.Close()
     }
