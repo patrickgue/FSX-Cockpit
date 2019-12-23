@@ -21,6 +21,23 @@ The netsh command can be simplyfied:
 `
 **But:** Depending on your networking environment, this might pose a security risk 
 
+## Features
+
+### Implemented
+
+- Attitude
+- Altitude
+- Speed
+- Vertical Speed
+- Heading
+- Radio (Display only)
+
+### TODO
+
+- Turn and Slip Indicator (Currently only static)
+- Radio (Change radios, fix wrong mapping of frequencies)
+- ...
+
 ## Differences from the original PS-Scripts
 
 - Changed update rate to sim-framerate at [fsxSimconnect.ps1:125,128](fsxSimconnect.ps1)
